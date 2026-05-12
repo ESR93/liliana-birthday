@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>День рождения Лилианы — 7 июня</title>
+<meta name="description" content="Приглашение на день рождения Лилианы. 7 июня, 11:00–13:00, Le Chesnay." />
+<meta property="og:title" content="День рождения Лилианы" />
+<meta property="og:description" content="7 июня, 11:00–13:00 · 2 square Saint-Roch, Le Chesnay" />
+<meta property="og:image" content="lilya.jpg" />
+<meta name="theme-color" content="#ffd6e8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --pink: #ffd6e8;
+    --pink-2: #ffb3d1;
+    --pink-3: #ff8dbb;
+    --lavender: #e4d4ff;
+    --blue: #cfe9ff;
+    --mint: #d4f5e4;
+    --cream: #fff7e6;
+    --text: #6b3a5b;
+    --text-soft: #9a6b86;
+    --shadow: 0 10px 30px rgba(255, 141, 187, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Comfortaa', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(1200px 800px at 10% 0%, #ffe0ef 0%, transparent 60%),
+      radial-gradient(900px 700px at 90% 10%, #e4d4ff 0%, transparent 60%),
+      radial-gradient(900px 700px at 50% 100%, #cfe9ff 0%, transparent 70%),
+      linear-gradient(180deg, #fff5fb 0%, #fde7f3 40%, #f5dbff 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.55;
+  }
+
+  /* ---------- floating background decor ---------- */
+  .sky-decor {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 100px;
+    filter: blur(0.5px);
+    box-shadow:
+      30px 0 0 -8px rgba(255,255,255,0.85),
+      -30px 0 0 -8px rgba(255,255,255,0.85),
+      55px -5px 0 -14px rgba(255,255,255,0.85),
+      -55px -5px 0 -14px rgba(255,255,255,0.85);
+    animation: drift 30s linear infinite;
+  }
+  .cloud.c1 { width: 110px; height: 32px; top: 8%; left: -10%; animation-duration: 45s; }
+  .cloud.c2 { width: 80px;  height: 24px; top: 22%; left: -10%; animation-duration: 55s; animation-delay: -15s; opacity: 0.7; }
+  .cloud.c3 { width: 140px; height: 40px; top: 55%; left: -15%; animation-duration: 60s; animation-delay: -30s; }
+  .cloud.c4 { width: 90px;  height: 28px; top: 75%; left: -10%; animation-duration: 50s; animation-delay: -8s; opacity: 0.8; }
+
+  @keyframes drift {
+    from { transform: translateX(0); }
+    to   { transform: translateX(120vw); }
+  }
+
+  .sparkle {
+    position: absolute;
+    font-size: 18px;
+    opacity: 0.65;
+    animation: twinkle 4s ease-in-out infinite;
+  }
+  .sparkle.s1 { top: 12%; left: 14%; animation-delay: 0s; }
+  .sparkle.s2 { top: 30%; right: 10%; animation-delay: 0.8s; font-size: 22px; }
+  .sparkle.s3 { top: 60%; left: 8%; animation-delay: 1.6s; font-size: 14px; }
+  .sparkle.s4 { top: 80%; right: 14%; animation-delay: 2.2s; font-size: 20px; }
+  .sparkle.s5 { top: 45%; right: 22%; animation-delay: 1.0s; font-size: 16px; }
+  .sparkle.s6 { top: 18%; left: 45%; animation-delay: 2.8s; font-size: 14px; }
+  @keyframes twinkle {
+    0%, 100% { transform: scale(1) rotate(0); opacity: 0.45; }
+    50%      { transform: scale(1.3) rotate(15deg); opacity: 1; }
+  }
+
+  /* ---------- layout ---------- */
+  main {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero {
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  .rainbow-frame {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 24px;
+  }
+  .rainbow-frame::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      #ff8dbb, #ffb3d1, #ffd6a8, #fff2a8,
+      #c5f0a8, #a8e0ff, #c5b3ff, #ff8dbb
+    );
+    filter: blur(1px);
+    animation: spin 20s linear infinite;
+  }
+  .rainbow-frame::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: white;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .photo {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: var(--shadow);
+  }
+
+  .photo-emoji {
+    position: absolute;
+    z-index: 3;
+    font-size: 32px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  }
+  .photo-emoji.e1 { top: -8px; left: 50%; transform: translateX(-50%); }
+  .photo-emoji.e2 { bottom: 10px; right: -10px; font-size: 28px; animation: bob 3s ease-in-out infinite; }
+  .photo-emoji.e3 { bottom: 10px; left: -10px; font-size: 26px; animation: bob 3s ease-in-out infinite 1.5s; }
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+  }
+
+  .eyebrow {
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    color: var(--pink-3);
+    margin: 0 0 4px;
+  }
+
+  h1 {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: clamp(44px, 11vw, 60px);
+    margin: 0 0 8px;
+    color: var(--text);
+    line-height: 1.05;
+    background: linear-gradient(90deg, #ff8dbb, #c084fc, #60a5fa, #ff8dbb);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 6s linear infinite;
+  }
+  @keyframes shimmer {
+    to { background-position: 200% center; }
+  }
+
+  .age-badge {
+    display: inline-block;
+    background: white;
+    border: 2px dashed var(--pink-2);
+    border-radius: 999px;
+    padding: 6px 18px;
+    font-size: 14px;
+    color: var(--text-soft);
+    margin-top: 6px;
+  }
+
+  .lead {
+    margin: 18px 6px 0;
+    font-size: 16px;
+    color: var(--text-soft);
+  }
+
+  /* ---------- cards ---------- */
+  .card {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 24px;
+    padding: 22px 22px;
+    margin: 18px 0;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.9);
+  }
+
+  .card-title {
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    margin: 0 0 8px;
+    color: var(--pink-3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 10px 0;
+  }
+  .row + .row {
+    border-top: 1px dashed #f3d8e8;
+  }
+  .row .icon {
+    font-size: 26px;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 36px;
+    text-align: center;
+  }
+  .row .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-soft);
+    margin: 0 0 2px;
+  }
+  .row .value {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text);
+  }
+  .row .value a {
+    color: var(--pink-3);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--pink-2);
+  }
+  .row .value a:hover { color: var(--text); }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    margin-top: 10px;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primary {
+    background: linear-gradient(135deg, #ff8dbb, #c084fc);
+    color: white;
+    box-shadow: 0 8px 20px rgba(192, 132, 252, 0.35);
+  }
+  .btn-primary:hover { box-shadow: 0 12px 26px rgba(192, 132, 252, 0.45); }
+  .btn-secondary {
+    background: white;
+    color: var(--text);
+    border: 2px solid var(--pink-2);
+  }
+  .btn-secondary:hover { background: #fff5fb; }
+  .btn-ghost {
+    background: rgba(255,255,255,0.7);
+    color: var(--text);
+    border: 1px solid #f3d8e8;
+  }
+
+  /* ---------- gift card special ---------- */
+  .gift-note {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--text);
+    text-align: center;
+    margin: 8px 0 12px;
+    line-height: 1.3;
+  }
+  .gift-sub {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-soft);
+    margin: 0 0 12px;
+  }
+
+  /* ---------- rsvp buttons row ---------- */
+  .rsvp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .rsvp-grid .btn { margin-top: 0; }
+
+  /* ---------- footer ---------- */
+  footer {
+    text-align: center;
+    padding: 28px 0 12px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--text-soft);
+  }
+  footer .heart { color: var(--pink-3); }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 380px) {
+    .rainbow-frame { width: 220px; height: 220px; }
+    .rsvp-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sky-decor" aria-hidden="true">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+  <div class="cloud c4"></div>
+  <span class="sparkle s1">✨</span>
+  <span class="sparkle s2">⭐</span>
+  <span class="sparkle s3">✨</span>
+  <span class="sparkle s4">⭐</span>
+  <span class="sparkle s5">✨</span>
+  <span class="sparkle s6">💫</span>
+</div>
+
+<main>
+
+  <section class="hero">
+    <div class="rainbow-frame">
+      <span class="photo-emoji e1" aria-hidden="true">👑</span>
+      <img class="photo" src="lilya.jpg" alt="Лилиана" />
+      <span class="photo-emoji e2" aria-hidden="true">🦄</span>
+      <span class="photo-emoji e3" aria-hidden="true">🌈</span>
+    </div>
+
+    <p class="eyebrow">Приглашение на день рождения</p>
+    <h1>Лилиане 4 года!</h1>
+    <div class="age-badge">🎂 7 июня · Le Chesnay</div>
+
+    <p class="lead">
+      Дорогие друзья, приходите вместе с нами отпраздновать —
+      будет волшебно, сладко и весело 🌸
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 class="card-title">🎀 Когда и где</h2>
+
+    <div class="row">
+      <span class="icon" aria-hidden="true">📅</span>
+      <div>
+        <p class="label">Дата</p>
+        <p class="value">Воскресенье, 7 июня</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="icon" aria-hidden="true">⏰</span>
+      <div>
+        <p class="label">Время</p>
+        <p class="value">с 11:00 до 13:00</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="icon" aria-hidden="true">📍</span>
+      <div>
+        <p class="label">Место</p>
+        <p class="value">2 Square Saint-Roch<br/>78150 Le Chesnay</p>
+      </div>
+    </div>
+
+    <a class="btn btn-secondary"
+       href="https://maps.apple.com/?q=2+Square+Saint-Roch,+78150+Le+Chesnay"
+       target="_blank" rel="noopener">
+      🗺️ Открыть в картах
+    </a>
+  </section>
+
+  <section class="card">
+    <h2 class="card-title">🎁 Про подарки</h2>
+    <p class="gift-note">
+      Лучший подарок — это просто<br/>ваше присутствие 💖
+    </p>
+    <p class="gift-sub">
+      Но если очень хочется что-то подарить
+      и не знаете что — вот вишлист с идеями:
+    </p>
+    <a class="btn btn-primary"
+       href="https://app.youpili.fr/share/abf6e267-0d58-4de8-9bba-45e85f08ddf0/?utm_source=share_link&utm_medium=directlink"
+       target="_blank" rel="noopener">
+      🎀 Открыть вишлист
+    </a>
+  </section>
+
+  <section class="card">
+    <h2 class="card-title">💌 Подтвердите присутствие</h2>
+    <p class="gift-sub" style="margin-bottom: 14px;">
+      Пожалуйста, дайте знать, придёте ли вы —
+      так мы поймём, сколько готовить угощений 🧁
+    </p>
+    <div class="rsvp-grid">
+      <a class="btn btn-primary"
+         href="https://t.me/katesmolko"
+         target="_blank" rel="noopener">
+        ✈️ Telegram
+      </a>
+      <a class="btn btn-secondary"
+         href="mailto:kate_smolko@mail.ru?subject=%D0%94%D0%A0%20%D0%9B%D0%B8%D0%BB%D0%B8%D0%B0%D0%BD%D1%8B%20%E2%80%94%20%D0%BF%D0%BE%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5&body=%D0%9F%D1%80%D0%B8%D0%B4%D1%91%D0%BC%20%D0%BD%D0%B0%20%D0%94%D0%A0%20%D0%9B%D0%B8%D0%BB%D0%B8%D0%B0%D0%BD%D1%8B%207%20%D0%B8%D1%8E%D0%BD%D1%8F!">
+        ✉️ Email
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Ждём вас <span class="heart">♥</span>
+  </footer>
+
+</main>
+
+</body>
+</html>
